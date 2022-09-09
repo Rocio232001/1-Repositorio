@@ -30,7 +30,7 @@ function main() {
         '\n');
     console.log(
         '///// Ejercicio 2 /////\n',
-        getCountryTranslatedName('ARG', 'ja'),
+        getCountryTranslatedName('ARG', 'br'),
         '\n');
     console.log(
         '///// Ejercicio 3 /////\n',
