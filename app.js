@@ -7,7 +7,11 @@ function getCountryByIso3(isoCode){
      }
 }
 function getCountryTranslatedName(isoCode, language){
-    
+    for(var k in countries) {
+        if(countries[k].iso3==isoCode){
+            return countries[k].translations[language];
+        }
+     }
 }
 function getCountriesBySubregion(subregion){
     
