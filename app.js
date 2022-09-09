@@ -1,9 +1,4 @@
 const countries = require('./countries.json');
-
-/** Get all the data of one single country given the ISO3 code.
- * @param  {string} isoCode
- * @returns {Object}
- */
 function getCountryByIso3(isoCode){
     for(var k in countries) {
         if(countries[k].iso3==isoCode){
@@ -11,20 +6,13 @@ function getCountryByIso3(isoCode){
         }
      }
 }
-
-/**
- * Get a country translated name given his ISO3 code and tranlated language.
- * @param  {string} isoCode
- * @param  {string} language example: "es"
- * @returns {string}
- */
 function getCountryTranslatedName(isoCode, language){
-    //Complete with your code
+    for(var k in countries) {
+        if(countries[k].iso3==isoCode){
+            return countries[k].translations[language];
+        }
+     }
 }
-/**Get an array of all the countries with the specified subregion
- * @param  {string} subregion
- * @returns {Array}
- */
 function getCountriesBySubregion(subregion){
     //Complete with your code
 }
