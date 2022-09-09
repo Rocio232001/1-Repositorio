@@ -14,7 +14,12 @@ function getCountryTranslatedName(isoCode, language){
      }
 }
 function getCountriesBySubregion(subregion){
-    //Complete with your code
+    var lista = []
+    for(var k in countries) {
+        if(countries[k].subregion==subregion){
+            lista.push(countries[k].name);
+        }
+     }
 }
 
 function main() {
