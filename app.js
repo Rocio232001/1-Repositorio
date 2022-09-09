@@ -20,6 +20,7 @@ function getCountriesBySubregion(subregion){
             lista.push(countries[k].name);
         }
      }
+     return lista;
 }
 
 function main() {
